@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUJAMRUTHA | Where Nature Meets Wellness | Yoga Classes & Pure Farm Honey</title>
+  <meta name="description" content="Yujamrutha - Where Nature Meets Wellness. Yoga Classes by Certified District Champion Abhinandhan & 100% Pure Multifloral Farm Honey from Kotikoppa, Araga, Thirthahalli.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+</head>
+<body>
+
+  <!-- Top Announcement Bar (Emerald & Gold) -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-location">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span data-i18n="top_location">Kotikoppa, Araga, Thirthahalli, Karnataka</span>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:9880781965">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span data-i18n="top_call">Call: 9880781965</span>
+        </a>
+        <a href="https://wa.me/919880781965?text=Namaste%20Master%20Abhinandhan,%20I%20visited%20Yujamrutha%20website" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span data-i18n="top_whatsapp">WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Floating Header (Matching the Mockup Image) -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Brand Logo on Left -->
+      <a href="index.html" class="brand-logo" aria-label="Yujamrutha Home">
+        <img src="assets/icons/logo.svg" alt="Yujamrutha Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Nav matching mockup: Home, About Us, Yoga ▾, Honey, Our Impact, Contact -->
+      <nav class="nav-menu">
+        <!-- Home Pill Button -->
+        <a href="index.html" class="nav-link nav-pill-home active">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span data-i18n="nav_home">Home</span>
+        </a>
+
+        <a href="about.html" class="nav-link" data-i18n="nav_about">About Us</a>
+
+        <!-- Yoga Dropdown -->
+        <div class="nav-dropdown">
+          <a href="yoga.html" class="nav-link">
+            <span data-i18n="nav_yoga">Yoga</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="yoga.html#instructor" class="nav-dropdown-item">Meet Guru Abhinandhan</a>
+            <a href="#yoga" class="nav-dropdown-item" onclick="switchHubTab('yoga', true);">Yoga Registration & Batches</a>
+            <a href="yoga.html#schedule" class="nav-dropdown-item">Weekly Timetable</a>
+            <a href="yoga.html#hatha" class="nav-dropdown-item">Hatha & Surya Namaskar</a>
+            <a href="yoga.html#pranayama" class="nav-dropdown-item">Pranayama & Meditation</a>
+            <a href="yoga.html#competition" class="nav-dropdown-item">District Competition Coaching</a>
+          </div>
+        </div>
+
+        <!-- Honey Dropdown -->
+        <div class="nav-dropdown">
+          <a href="honey.html" class="nav-link">
+            <span data-i18n="nav_honey">Honey</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="#honey" class="nav-dropdown-item" onclick="switchHubTab('honey', true);" data-i18n="nav_honey_jars">Honey Packages (250g, 500g, 1kg)</a>
+            <a href="honey.html#multifloral" class="nav-dropdown-item" data-i18n="nav_honey_why">Why Multifloral Honey?</a>
+            <a href="honey.html#apiary" class="nav-dropdown-item" data-i18n="nav_honey_apiary">Kotikoppa Apiary & Harvest</a>
+            <a href="honey.html#purity" class="nav-dropdown-item" data-i18n="nav_honey_purity">Raw Purity & Quality Tests</a>
+            <a href="honey.html#ritual" class="nav-dropdown-item" data-i18n="nav_honey_sadhana">Daily Honey Water Sadhana</a>
+          </div>
+        </div>
+
+        <a href="#beekeeping" class="nav-link" data-i18n="nav_impact">Our Impact</a>
+        <a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <!-- Nav Actions: Separator, WhatsApp, Cart, Language Toggle -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button class="lang-toggle-btn" aria-label="Toggle language between English and Kannada">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span class="lang-toggle-label">ಕನ್ನಡ</span>
+        </button>
+
+        <div class="nav-divider"></div>
+
+        <!-- WhatsApp Circular Button -->
+        <a href="https://wa.me/919880781965?text=Namaste%20Master%20Abhinandhan,%20I%20have%20an%20inquiry%20regarding%20Yujamrutha" 
+           target="_blank" 
+           rel="noopener" 
+           class="nav-icon-circle whatsapp" 
+           aria-label="Direct WhatsApp Contact">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+
+        <!-- Cart Circular Button -->
+        <button class="nav-icon-circle" id="navCartBtn" aria-label="View Honey Order Basket">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" style="display: none;">0</span>
+        </button>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button class="hamburger" aria-label="Open Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO STAGE (Featuring the Exact Uploaded Background Artwork)
+       ========================================================================= -->
+  <section class="hero-stage">
+    <div class="hero-artwork-wrap">
+      <!-- 
+        Interactive Hotspots perfectly mapped over the artwork:
+        1. Left infinity circle (Meditating Yogi in sunrise)
+        2. Right infinity circle (Golden Honey Jar dripping liquid gold)
+        3. Explore Yoga Button
+        4. Discover Honey Button
+        5. The 4 bottom feature badges
+      -->
+
+      <!-- Yogi Loop Hotspot (Left) -->
+      <a href="yoga.html" class="hero-hotspot hotspot-yogi-loop" title="Explore Yoga with Master Abhinandhan">
+        Yoga Classes & Training
+      </a>
+
+      <!-- Honey Jar Loop Hotspot (Right) -->
+      <a href="honey.html" class="hero-hotspot hotspot-honey-loop" title="Discover Pure Farm Multifloral Honey">
+        Pure Farm Honey
+      </a>
+
+      <!-- Button 1 Hotspot: Yoga Registration -->
+      <a href="#yoga" class="hero-hotspot hotspot-btn-yoga" onclick="switchHubTab('yoga', true); return false;" title="Yoga Registration">
+        Yoga Registration
+      </a>
+
+      <!-- Button 2 Hotspot: Buy Honey -->
+      <a href="#honey" class="hero-hotspot hotspot-btn-honey" onclick="switchHubTab('honey', true); return false;" title="Buy Honey">
+        Buy Honey
+      </a>
+
+      <!-- 4 Bottom Feature Hotspots -->
+      <a href="#yoga" class="hero-hotspot hotspot-feat-1" title="Yoga for Better Life">
+        Yoga for Better Life
+      </a>
+      <a href="#honey" class="hero-hotspot hotspot-feat-2" title="100% Natural Honey">
+        100% Natural Honey
+      </a>
+      <a href="#about" class="hero-hotspot hotspot-feat-3" title="Holistic Wellness">
+        Holistic Wellness
+      </a>
+      <a href="#beekeeping" class="hero-hotspot hotspot-feat-4" title="Nature's Goodness">
+        Nature's Goodness
+      </a>
+
+      <!-- Dynamic Kannada Language Overlay (Activates smoothly when Kannada is selected) -->
+      <div class="hero-kn-overlay">
+        <h1 class="hero-kn-title">ಯುಜಾಮೃತ</h1>
+        <div class="hero-kn-sub" data-i18n="hero_tagline_custom">ಪ್ರಕೃತಿ ಮತ್ತು ಸ್ವಾಸ್ಥ್ಯದ ದಿವ್ಯ ಸಂಗಮ</div>
+        <div class="hero-kn-trio" data-i18n="hero_trio">ಯೋಗ • ಶುದ್ಧ ಜೇನುತುಪ್ಪ • ಆರೋಗ್ಯಕರ ಜೀವನ</div>
+        <div class="hero-kn-actions">
+          <a href="#yoga" class="btn btn-primary">
+            <span>🪷</span>
+            <span data-i18n="hero_btn_explore_yoga">ಯೋಗ ವಿವರ ತಿಳಿಯಿರಿ</span>
+          </a>
+          <a href="#honey" class="btn btn-forest">
+            <span>🍯</span>
+            <span data-i18n="hero_btn_discover_honey">ಶುದ್ಧ ಜೇನು ಖರೀದಿಸಿ</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Quick Actions Dock (shown for easy tap interaction on phones) -->
+    <div class="hero-mobile-dock">
+      <div class="container hero-mobile-grid">
+        <a href="#yoga" class="btn btn-primary" onclick="switchHubTab('yoga', true); return false;" style="font-size: 0.82rem; padding: 0.6rem 0.8rem;">
+          <span>🪷 Yoga Registration</span>
+        </a>
+        <a href="#honey" class="btn btn-forest" onclick="switchHubTab('honey', true); return false;" style="font-size: 0.82rem; padding: 0.6rem 0.8rem;">
+          <span>🍯 Buy Honey</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION: ABOUT MASTER ABHINANDHAN & YUJAMRUTHA PHILOSOPHY
+       ========================================================================= -->
+  <section id="about" class="spotlight-section">
+    <div class="container spotlight-grid">
+      <!-- Portrait Card -->
+      <div class="instructor-portrait-card">
+        <div style="position: relative; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--gold-border-light); background: #0D2518;">
+          <img src="assets/images/abhinandhan-championship.jpg" alt="Master Abhinandhan - All India Inter-University Yogasana Championship 2024" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;">
+          <div style="position: absolute; top: 10px; left: 10px; right: 10px; background: rgba(13,37,24,0.88); backdrop-filter: blur(6px); color: #F8F5E9; padding: 0.45rem 0.75rem; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 700; border: 1px solid rgba(226,179,63,0.6); display: flex; align-items: center; gap: 0.4rem;">
+            <span>🏆</span>
+            <span>All India Inter-University Championship 2024</span>
+          </div>
+        </div>
+        <div style="margin-top: 1.25rem; padding: 0.9rem; background: var(--bg-gold-light); border-radius: var(--radius-md); border: 1px solid var(--gold-border); text-align: left;">
+          <div style="font-size: 0.88rem; font-weight: 700; color: var(--gold-dark); margin-bottom: 0.2rem;">Official Recognition</div>
+          <div style="font-size: 0.78rem; color: var(--text-secondary); line-height: 1.45;">All India University Competitor (2024) &bull; District Gold Medalist &bull; Certified Yoga Guru</div>
+        </div>
+      </div>
+
+      <!-- Spotlight Content -->
+      <div class="spotlight-content">
+        <div class="section-tag" data-i18n="about_tag">Our Story & Vision</div>
+        <h2 data-i18n="about_title">The Sacred Union of 'Yuj' and 'Amrutha'</h2>
+        
+        <div class="spotlight-role">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+          <span>Abhinandhan &bull; Certified Yoga Instructor &bull; District Champion</span>
+        </div>
+
+        <p class="spotlight-bio" data-i18n="about_p1">
+          Founded by Abhinandhan, a passionate and certified yoga instructor who has won district-wide competitions, Yujamrutha represents two pillars of health: traditional yoga practice ('Yuj') and divine natural nourishment through raw farm honey ('Amrutha').
+        </p>
+
+        <p class="spotlight-bio" data-i18n="about_p2">
+          Based in the lush biodiversity of Kotikoppa, Araga in Thirthahalli, our farm honey is ethically harvested from honeybees pollinating an array of wildflowers, coffee blossoms, and medicinal herbs native to the Western Ghats.
+        </p>
+
+        <!-- Achievements Grid -->
+        <div class="achievements-list">
+          <div class="achievement-item">
+            <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="achievement-text" data-i18n="achieve_1">Certified Yoga Instructor with specialized Hatha & Pranayama training.</div>
+          </div>
+          <div class="achievement-item">
+            <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="achievement-text" data-i18n="achieve_2">Gold Medalist & Winner in District-Level Yoga Competitions.</div>
+          </div>
+          <div class="achievement-item">
+            <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="achievement-text" data-i18n="achieve_3">100% Forest & Farm Wildflower Pollination without artificial feeds.</div>
+          </div>
+          <div class="achievement-item">
+            <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <div class="achievement-text" data-i18n="achieve_4">Over 500+ students trained in healthy yogic living.</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="about.html" class="btn btn-primary" data-i18n="btn_know_more">Read Full Journey</a>
+          <a href="tel:9880781965" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Call 9880781965</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION: DEDICATED TAB SECTIONS (YOGA REGISTRATION & BUY HONEY)
+       ========================================================================= -->
+  <section id="services-hub" class="services-hub-section">
+    <div class="container">
+      <!-- Master Hub Tabs Switcher -->
+      <div class="hub-tabs-header">
+        <div class="hub-tabs-nav" role="tablist">
+          <button class="hub-tab-btn active" id="tabBtnYoga" role="tab" aria-selected="true" onclick="switchHubTab('yoga')">
+            <span class="tab-icon">🪷</span>
+            <span class="tab-title" data-i18n="tab_yoga_title">Yoga Registration</span>
+            <span class="tab-badge" data-i18n="tab_yoga_badge">Batches & Timetable</span>
+          </button>
+          <button class="hub-tab-btn" id="tabBtnHoney" role="tab" aria-selected="false" onclick="switchHubTab('honey')">
+            <span class="tab-icon">🍯</span>
+            <span class="tab-title" data-i18n="tab_honey_title">Buy Farm Honey</span>
+            <span class="tab-badge" data-i18n="tab_honey_badge">100% Pure Raw</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB PANE 1: YOGA REGISTRATION -->
+      <div class="hub-tab-pane active" id="paneYoga">
+        <!-- Anchor for #yoga -->
+        <div id="yoga" style="position: relative; top: -90px; visibility: hidden;"></div>
+
+        <div class="section-header">
+          <div class="section-tag" data-i18n="yoga_tag">Transform Your Life</div>
+          <h2 class="section-title" data-i18n="yoga_title">Yoga Classes by Master Abhinandhan</h2>
+          <p class="section-subtitle" data-i18n="yoga_subtitle">
+            Whether you seek mental peace, physical flexibility, or competition coaching, our batches are thoughtfully designed for all ages.
+          </p>
+        </div>
+
+        <div class="yoga-cards-grid">
+          <!-- Batch 1: Hatha & Vinyasa Foundations -->
+          <div class="yoga-card">
+            <div class="yoga-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M4 18c0-3.3 2.7-6 6-6h4c3.3 0 6 2.7 6 6"/><path d="M12 12v10"/></svg>
+            </div>
+            <h3 class="yoga-card-title" data-i18n="yoga_batch_1_title">Hatha & Vinyasa Foundations</h3>
+            <div class="yoga-card-level" data-i18n="yoga_batch_1_level">Beginner to Intermediate</div>
+            <p class="yoga-card-desc" data-i18n="yoga_batch_1_desc">Gentle yet energizing asana practice focusing on body alignment, spine strength, and breath-movement coordination.</p>
+            
+            <ul class="yoga-features-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_1_1">Step-by-step posture guidance</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_1_2">Morning 6:00 AM – 7:00 AM & 7:15 AM – 8:15 AM</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_1_3">Both in-studio (Thirthahalli) & online available</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary" onclick="quickBookClass('Hatha Foundations')">
+              <span data-i18n="btn_book_class">Enroll / Inquire Now</span>
+            </button>
+          </div>
+
+          <!-- Batch 2: Pranayama, Dhyana & Healing (Featured) -->
+          <div class="yoga-card featured">
+            <span class="featured-pill">POPULAR</span>
+            <div class="yoga-card-icon" style="background: #FBECC7; color: #8E5E0B;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+            </div>
+            <h3 class="yoga-card-title" data-i18n="yoga_batch_2_title">Pranayama, Dhyana & Healing</h3>
+            <div class="yoga-card-level" data-i18n="yoga_batch_2_level">All Levels & Seniors</div>
+            <p class="yoga-card-desc" data-i18n="yoga_batch_2_desc">Ancient breath regulation techniques, guided chakra meditation, and therapeutic stress relief for inner vitality.</p>
+            
+            <ul class="yoga-features-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_2_1">Deep stress & anxiety reduction</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_2_2">Evening 5:30 PM – 6:30 PM</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_2_3">Respiratory & digestive wellness</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-primary" onclick="quickBookClass('Pranayama & Meditation')">
+              <span data-i18n="btn_book_class">Enroll / Inquire Now</span>
+            </button>
+          </div>
+
+          <!-- Batch 3: Competition & Advanced Coaching -->
+          <div class="yoga-card">
+            <div class="yoga-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M6 4h12v7a6 6 0 0 1-12 0V4z"/></svg>
+            </div>
+            <h3 class="yoga-card-title" data-i18n="yoga_batch_3_title">Advanced & Competition Coaching</h3>
+            <div class="yoga-card-level" data-i18n="yoga_batch_3_level">Intermediate to Advanced</div>
+            <p class="yoga-card-desc" data-i18n="yoga_batch_3_desc">Dedicated personal training led directly by District Champion Abhinandhan for state and district yoga contests.</p>
+            
+            <ul class="yoga-features-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_3_1">Advanced asanas & flexibility mastery</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_3_2">Special evening & weekend intense batches</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span data-i18n="yoga_feat_3_3">Scoring technique, endurance & poise</span>
+              </li>
+            </ul>
+
+            <button class="btn btn-secondary" onclick="quickBookClass('Competition Coaching')">
+              <span data-i18n="btn_book_class">Enroll / Inquire Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Yoga Registration Box (11 Fields) -->
+        <div class="yoga-reg-box" id="yogaRegBox">
+          <div class="yoga-reg-header">
+            <div class="section-tag" style="background: rgba(229, 175, 54, 0.2); color: #8E5E0B;" data-i18n="form_super_title">YUJAMRUTHA YOGA</div>
+            <h3 style="font-size: 2rem; color: var(--text-primary); margin: 0.5rem 0;" data-i18n="form_main_title">STUDENT REGISTRATION FORM</h3>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6;" data-i18n="form_sub_title">
+              Join classical yoga sadhana under Master Abhinandhan. Please fill out the student registration details below to confirm admission.
+            </p>
+          </div>
+
+          <form id="yogaQuickForm" onsubmit="submitYogaReg(event)">
+            <div class="yoga-reg-grid">
+              
+              <!-- 1. Student Name -->
+              <div class="yoga-reg-field">
+                <label for="homeRegStudentName">
+                  <span class="field-num">1</span>
+                  <span data-i18n="reg_field_1_label">1. Student Name</span>
+                </label>
+                <input type="text" id="homeRegStudentName" name="student_name" placeholder="Full name of student" required>
+              </div>
+
+              <!-- 2. Parent's Name -->
+              <div class="yoga-reg-field">
+                <label for="homeRegParentName">
+                  <span class="field-num">2</span>
+                  <span data-i18n="reg_field_2_label">2. Parent's Name</span>
+                </label>
+                <input type="text" id="homeRegParentName" name="parent_name" placeholder="Father's / Mother's / Guardian's name" required>
+              </div>
+
+              <!-- 3. Age -->
+              <div class="yoga-reg-field">
+                <label for="homeRegAge">
+                  <span class="field-num">3</span>
+                  <span data-i18n="reg_field_3_label">3. Age</span>
+                </label>
+                <input type="number" id="homeRegAge" name="age" min="4" max="99" placeholder="e.g. 15 or 32" required>
+              </div>
+
+              <!-- 4. Class -->
+              <div class="yoga-reg-field">
+                <label for="homeRegClass">
+                  <span class="field-num">4</span>
+                  <span data-i18n="reg_field_4_label">4. Class / Batch</span>
+                </label>
+                <select id="homeRegClass" name="yoga_class" required>
+                  <option value="Hatha & Vinyasa Foundations (Morning 6:00 AM – 7:00 AM)">Hatha & Vinyasa Foundations (Morning 6:00 AM – 7:00 AM)</option>
+                  <option value="Vinyasa & Therapy (Morning 7:15 AM – 8:15 AM)">Vinyasa & Therapy (Morning 7:15 AM – 8:15 AM)</option>
+                  <option value="Pranayama, Dhyana & Healing (Evening 5:30 PM – 6:30 PM)" selected>Pranayama, Dhyana & Healing (Evening 5:30 PM – 6:30 PM)</option>
+                  <option value="District & State Competition Coaching (Evening 6:45 PM – 8:00 PM)">District & State Competition Coaching (Evening 6:45 PM – 8:00 PM)</option>
+                  <option value="Kids & Youth Focus Yoga (Evening 4:30 PM – 5:30 PM)">Kids & Youth Focus Yoga (Evening 4:30 PM – 5:30 PM)</option>
+                  <option value="Therapeutic Yoga (Chronic Pain & Mobility)">Therapeutic Yoga (Chronic Pain & Mobility)</option>
+                  <option value="Weekend Intensive Workshop (Sat/Sun 8:30 AM – 10:30 AM)">Weekend Intensive Workshop (Sat/Sun 8:30 AM – 10:30 AM)</option>
+                  <option value="1-on-1 Private Sadhana">1-on-1 Private Sadhana Mentorship</option>
+                </select>
+              </div>
+
+              <!-- 5. Address (Full Width) -->
+              <div class="yoga-reg-field full-width">
+                <label for="homeRegAddress">
+                  <span class="field-num">5</span>
+                  <span data-i18n="reg_field_5_label">5. Address</span>
+                </label>
+                <textarea id="homeRegAddress" name="address" rows="2" placeholder="House/Street, Area/Village, Post, Town (e.g. Kotikoppa, Araga, Thirthahalli)" required></textarea>
+              </div>
+
+              <!-- 6. Phone Number -->
+              <div class="yoga-reg-field">
+                <label for="homeRegPhone">
+                  <span class="field-num">6</span>
+                  <span data-i18n="reg_field_6_label">6. Phone Number</span>
+                </label>
+                <input type="tel" id="homeRegPhone" name="phone" placeholder="e.g. 9880781965" required oninput="if(document.getElementById('homeSamePhoneCheck')?.checked) syncPhoneToWhatsApp(document.getElementById('homeSamePhoneCheck'))">
+              </div>
+
+              <!-- 7. WhatsApp Number -->
+              <div class="yoga-reg-field">
+                <label for="homeRegWhatsApp">
+                  <span class="field-num">7</span>
+                  <span data-i18n="reg_field_7_label">7. WhatsApp Number</span>
+                  <span class="reg-same-checkbox">
+                    <input type="checkbox" id="homeSamePhoneCheck" onchange="syncPhoneToWhatsApp(this)">
+                    <span data-i18n="reg_same_phone">Same as Phone</span>
+                  </span>
+                </label>
+                <input type="tel" id="homeRegWhatsApp" name="whatsapp" placeholder="WhatsApp number for confirmation" required>
+              </div>
+
+              <!-- 8. Previous Yoga Experience -->
+              <div class="yoga-reg-field">
+                <label for="homeRegExp">
+                  <span class="field-num">8</span>
+                  <span data-i18n="reg_field_8_label">8. Previous Yoga Experience</span>
+                </label>
+                <select id="homeRegExp" name="experience" required>
+                  <option value="Beginner (No prior experience)">Beginner (No prior experience)</option>
+                  <option value="Basic (Practiced 1 – 6 months)">Basic (Practiced 1 – 6 months)</option>
+                  <option value="Intermediate (1 – 3 years regular practice)">Intermediate (1 – 3 years regular practice)</option>
+                  <option value="Advanced (Practicing 3+ years)">Advanced (Practicing 3+ years)</option>
+                  <option value="Competition Level Practitioner">Competition Level Practitioner</option>
+                </select>
+              </div>
+
+              <!-- 9. Main Goal -->
+              <div class="yoga-reg-field">
+                <label for="homeRegGoal">
+                  <span class="field-num">9</span>
+                  <span data-i18n="reg_field_9_label">9. Main Goal</span>
+                </label>
+                <select id="homeRegGoal" name="goal" required>
+                  <option value="General Fitness, Stamina & Flexibility" selected>General Fitness, Stamina & Flexibility</option>
+                  <option value="Mental Peace, Stress Relief & Meditation">Mental Peace, Stress Relief & Meditation</option>
+                  <option value="District / State Competition Coaching">District / State Competition Coaching</option>
+                  <option value="Therapeutic Healing (Back pain, Cervical, Digestion)">Therapeutic Healing (Back pain, Cervical, Digestion)</option>
+                  <option value="Kids Concentration, Eye Health & Memory">Kids Concentration, Eye Health & Memory</option>
+                  <option value="Weight Management & Healthy Routine">Weight Management & Healthy Routine</option>
+                  <option value="Classical Sadhana & Spiritual Growth">Classical Sadhana & Spiritual Growth</option>
+                </select>
+              </div>
+
+              <!-- 10. Injury / Health Issues (Full Width) -->
+              <div class="yoga-reg-field full-width">
+                <label for="homeRegHealthIssues">
+                  <span class="field-num">10</span>
+                  <span data-i18n="reg_field_10_label">10. Injury / Health Issues</span>
+                </label>
+                <input type="text" id="homeRegHealthIssues" name="health_issues" placeholder="e.g. Lower back stiffness, neck strain, asthma, high BP (write 'None' if healthy)" value="None">
+              </div>
+
+              <!-- 11. Language (Full Width) -->
+              <div class="yoga-reg-field full-width">
+                <label for="homeRegLanguage">
+                  <span class="field-num">11</span>
+                  <span data-i18n="reg_field_11_label">11. Language</span>
+                </label>
+                <select id="homeRegLanguage" name="language" required>
+                  <option value="Kannada (ಕನ್ನಡ)" selected>Kannada (ಕನ್ನಡ)</option>
+                  <option value="English">English</option>
+                  <option value="Bilingual (Kannada & English)">Bilingual (Kannada & English)</option>
+                  <option value="Hindi">Hindi</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div style="margin-top: 2rem; text-align: center;">
+              <button type="submit" class="btn btn-whatsapp" style="padding: 0.95rem 2.8rem; font-size: 1.05rem; box-shadow: var(--shadow-md);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <span data-i18n="form_submit_btn">Submit Registration Form (WhatsApp)</span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="yoga.html" class="btn btn-secondary" data-i18n="btn_view_schedule">View Full Schedule & Batches</a>
+        </div>
+      </div>
+
+      <!-- TAB PANE 2: BUY HONEY -->
+      <div class="hub-tab-pane" id="paneHoney">
+        <!-- Anchor for #honey -->
+        <div id="honey" style="position: relative; top: -90px; visibility: hidden;"></div>
+
+        <div class="section-header">
+          <div class="section-tag" data-i18n="honey_tag">Nature's Liquid Gold</div>
+          <h2 class="section-title" data-i18n="honey_title">Pure Farm Multifloral Honey</h2>
+          <p class="section-subtitle" data-i18n="honey_subtitle">
+            Gathered by wild bees pollinating thousands of forest flowers, teak blooms, and herbal blossoms across Kotikoppa, Thirthahalli.
+          </p>
+        </div>
+
+      <!-- Honey Origin Story Card -->
+      <div class="honey-origin-card">
+        <div class="honey-origin-text">
+          <h3 data-i18n="honey_origin_title">Why Multifloral Farm Honey?</h3>
+          <p data-i18n="honey_origin_desc">
+            Unlike mono-floral or commercial ultra-filtered honey, our bees forage freely on diverse wild plants across Araga and Thirthahalli. This natural diversity yields a rich amber color, complex floral aroma, and superior concentration of pollen, enzymes, and antioxidants.
+          </p>
+          <div class="honey-perks">
+            <div class="honey-perk-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="honey_perk_1">100% Cold-Extracted & Raw</span>
+            </div>
+            <div class="honey-perk-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="honey_perk_2">Never Pasteurized or Heated</span>
+            </div>
+            <div class="honey-perk-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="honey_perk_3">Naturally High in Pollen & Enzymes</span>
+            </div>
+            <div class="honey-perk-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span data-i18n="honey_perk_4">Direct From Our Farm Apiary</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="honey-origin-visual">
+          <img src="assets/images/multifloral-honey.jpg" alt="100% Pure Raw Multifloral Farm Honey - Western Ghats" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        <!-- 250g Jar -->
+        <div class="product-card">
+          <span class="product-badge">TRIAL PACK</span>
+          <div class="product-img-wrap">
+            <img src="assets/images/honey-250g.jpg" alt="Yujamrutha Multifloral Honey 250g" class="product-img">
+          </div>
+          <h3 class="product-title" data-i18n="prod_1_title">Yujamrutha Multifloral Honey</h3>
+          <div class="product-subtitle" data-i18n="prod_1_sub">250g Glass Jar (Tasting / Travel Pack)</div>
+          <p class="product-desc" data-i18n="prod_1_desc">Ideal introduction to authentic Malnad raw honey. Rich golden color and subtle herbal undertones.</p>
+          
+          <div class="product-price-row">
+            <div class="product-price" data-i18n="prod_1_price">₹190</div>
+            <div class="product-size" data-i18n="prod_1_size">Net Weight: 250 grams</div>
+          </div>
+
+          <div class="product-actions">
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('honey-250g', -1)">-</button>
+              <span class="qty-value" id="qty-honey-250g">1</span>
+              <button class="qty-btn" onclick="changeQty('honey-250g', 1)">+</button>
+            </div>
+            <button class="btn btn-secondary" onclick="addToCart('honey-250g')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span data-i18n="btn_add_cart">Add to Order</span>
+            </button>
+          </div>
+
+          <div style="margin-top: 0.75rem;">
+            <button class="btn btn-whatsapp" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;" onclick="directOrderWhatsApp('honey-250g')">
+              <span data-i18n="btn_order_wa">Direct WhatsApp Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 500g Jar (Most Popular) -->
+        <div class="product-card" style="border: 2px solid var(--gold-primary);">
+          <span class="product-badge" style="background: var(--gold-primary); color: white;">MOST POPULAR</span>
+          <div class="product-img-wrap">
+            <img src="assets/images/honey-500g.jpg" alt="Yujamrutha Multifloral Honey 500g" class="product-img">
+          </div>
+          <h3 class="product-title" data-i18n="prod_2_title">Yujamrutha Multifloral Honey</h3>
+          <div class="product-subtitle" data-i18n="prod_2_sub">500g Glass Jar (Most Popular / Family Pack)</div>
+          <p class="product-desc" data-i18n="prod_2_desc">Our bestselling daily health jar. Perfect for morning warm water + lemon routines and natural sweetness.</p>
+          
+          <div class="product-price-row">
+            <div class="product-price" data-i18n="prod_2_price">₹360</div>
+            <div class="product-size" data-i18n="prod_2_size">Net Weight: 500 grams</div>
+          </div>
+
+          <div class="product-actions">
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('honey-500g', -1)">-</button>
+              <span class="qty-value" id="qty-honey-500g">1</span>
+              <button class="qty-btn" onclick="changeQty('honey-500g', 1)">+</button>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart('honey-500g')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span data-i18n="btn_add_cart">Add to Order</span>
+            </button>
+          </div>
+
+          <div style="margin-top: 0.75rem;">
+            <button class="btn btn-whatsapp" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;" onclick="directOrderWhatsApp('honey-500g')">
+              <span data-i18n="btn_order_wa">Direct WhatsApp Order</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 1kg Jar -->
+        <div class="product-card">
+          <span class="product-badge">BEST VALUE</span>
+          <div class="product-img-wrap">
+            <img src="assets/images/honey-1kg.jpg" alt="Yujamrutha Multifloral Honey 1kg" class="product-img">
+          </div>
+          <h3 class="product-title" data-i18n="prod_3_title">Yujamrutha Multifloral Honey</h3>
+          <div class="product-subtitle" data-i18n="prod_3_sub">1 kg Value Pack (Immunity & Yoga Sadhana)</div>
+          <p class="product-desc" data-i18n="prod_3_desc">Full season harvest in premium airtight glass packaging. Best value for dedicated daily consumers.</p>
+          
+          <div class="product-price-row">
+            <div class="product-price" data-i18n="prod_3_price">₹680</div>
+            <div class="product-size" data-i18n="prod_3_size">Net Weight: 1000 grams (1 kg)</div>
+          </div>
+
+          <div class="product-actions">
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty('honey-1kg', -1)">-</button>
+              <span class="qty-value" id="qty-honey-1kg">1</span>
+              <button class="qty-btn" onclick="changeQty('honey-1kg', 1)">+</button>
+            </div>
+            <button class="btn btn-secondary" onclick="addToCart('honey-1kg')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+              <span data-i18n="btn_add_cart">Add to Order</span>
+            </button>
+          </div>
+
+          <div style="margin-top: 0.75rem;">
+            <button class="btn btn-whatsapp" style="width: 100%; font-size: 0.85rem; padding: 0.55rem;" onclick="directOrderWhatsApp('honey-1kg')">
+              <span data-i18n="btn_order_wa">Direct WhatsApp Order</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a href="honey.html" class="btn btn-secondary">Explore Complete Honey Guide & Farm Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- =========================================================================
+       SECTION: SUPPORT BEEKEEPING & WESTERN GHATS PRESERVATION
+       ========================================================================= -->
+  <section id="beekeeping" style="background: #091F13; padding: 4.5rem 0; color: #FCEFD2; border-top: 1px solid rgba(229, 175, 54, 0.25); border-bottom: 1px solid rgba(229, 175, 54, 0.25);">
+    <div class="container">
+      <div class="spotlight-grid" style="align-items: center;">
+        <div>
+          <div class="section-tag" style="background: rgba(229, 175, 54, 0.2); color: #F5C542; border-color: rgba(229, 175, 54, 0.4);">
+            Our Environmental Impact
+          </div>
+          <h2 style="font-size: 2.3rem; margin-bottom: 1rem; color: #FFF2D1;">Support Sustainable Beekeeping</h2>
+          <p style="color: #D3C3B1; font-size: 0.98rem; line-height: 1.7; margin-bottom: 1.25rem;">
+            Honeybees are the unsung guardians of the Western Ghats ecosystem. By foraging across coffee plantations, wild teak forests, and herbal orchards in Kotikoppa and Araga, bees pollinate over 75% of local flowering flora.
+          </p>
+          <p style="color: #D3C3B1; font-size: 0.98rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            When you purchase Yujamrutha honey, you directly support ethical beekeeping that protects bee colonies, preserves native biodiversity in Thirthahalli, and empowers local agricultural livelihoods.
+          </p>
+          <a href="honey.html" class="btn btn-primary" data-i18n="hero_cta_honey">Order Farm Honey</a>
+        </div>
+
+        <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(229, 175, 54, 0.4); box-shadow: var(--shadow-lg);">
+          <img src="assets/images/apiary-landscape.jpg" alt="Kotikoppa Apiary Landscape - Sustainable Beekeeping in Western Ghats" style="width: 100%; height: 320px; object-fit: cover; display: block;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION: CONTACT & LOCATION PREVIEW
+       ========================================================================= -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-i18n="contact_tag">Get in Touch</div>
+        <h2 class="section-title" data-i18n="contact_title">Visit Us or Connect Directly</h2>
+        <p class="section-subtitle" data-i18n="contact_subtitle">
+          Have questions about yoga batches or want farm honey delivered to your doorstep? Reach out to Master Abhinandhan.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details -->
+        <div class="contact-info-card">
+          <h3 class="contact-info-title" data-i18n="contact_info_title">Our Studio & Farm Apiary</h3>
+          <p class="contact-info-desc" data-i18n="contact_info_desc">
+            Located in the serene green environs of Araga, Thirthahalli. Visitors are welcome for yoga trials and farm honey tasting by appointment.
+          </p>
+
+          <div class="contact-detail-items">
+            <!-- Location -->
+            <div class="contact-detail-row">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_addr_label">Address & Location</div>
+                <div class="contact-value" data-i18n="contact_addr_val">Kotikoppa, Araga, Thirthahalli Taluk, Shivamogga District, Karnataka - 577414</div>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-detail-row">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_phone_label">Call Directly</div>
+                <div class="contact-value"><a href="tel:9880781965">9880781965</a></div>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-detail-row">
+              <div class="contact-icon-box" style="color: #25D366; background: #EEFBF2;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_wa_label">WhatsApp Chat</div>
+                <div class="contact-value"><a href="https://wa.me/919880781965" target="_blank" rel="noopener">9880781965</a></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="map-wrapper">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3883.336494247262!2d75.2440!3d13.6930!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbba7b2c0f99d65%3A0xc3b832b35a687352!2sThirthahalli%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" 
+              title="Yujamrutha Location - Araga, Thirthahalli">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Quick Inquiry Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;" data-i18n="contact_tag">Direct Inquiry</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+            Send an instant inquiry message directly to Master Abhinandhan via WhatsApp:
+          </p>
+
+          <form id="inquiryForm">
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_name_label">Your Name</label>
+              <input type="text" name="name" class="form-input" placeholder="e.g. Ramesh Kumar" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_phone_label">Phone / WhatsApp Number</label>
+              <input type="tel" name="phone" class="form-input" placeholder="e.g. 9880781965" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_interest_label">I am interested in</label>
+              <select name="interest" class="form-select">
+                <option value="Yoga Classes (Beginner / Morning)" data-i18n="form_interest_opt1">Yoga Classes (Beginner / Morning)</option>
+                <option value="Yoga Classes (Pranayama / Evening)" data-i18n="form_interest_opt2">Yoga Classes (Pranayama / Evening)</option>
+                <option value="District Competition Coaching" data-i18n="form_interest_opt3">District Competition Coaching</option>
+                <option value="Ordering Pure Farm Honey" data-i18n="form_interest_opt4">Ordering Pure Farm Honey</option>
+                <option value="Both Yoga & Honey Inquiry" data-i18n="form_interest_opt5">Both Yoga & Honey Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" data-i18n="form_msg_label">Your Message / Question</label>
+              <textarea name="message" class="form-textarea" placeholder="Please mention your question or requested batch timing..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp" style="width: 100%;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <span data-i18n="form_submit_btn">Send Inquiry via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CART DRAWER COMPONENT
+       ========================================================================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Honey Cart Drawer">
+    <div class="cart-header">
+      <h3 data-i18n="cart_title">Your Honey Order</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-body">
+      <div id="cartEmptyNotice" class="cart-empty">
+        <svg class="cart-empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <p data-i18n="cart_empty_text">Your order basket is empty. Choose a honey jar to get started!</p>
+      </div>
+      <div id="cartItemsList"></div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display: none;">
+      <div class="cart-total-row">
+        <span data-i18n="cart_total_label">Total Amount:</span>
+        <span id="cartTotalPrice" style="color: var(--gold-dark);">₹0</span>
+      </div>
+      <button class="btn btn-whatsapp" style="width: 100%;" onclick="checkoutWhatsApp()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span data-i18n="cart_checkout_btn">Confirm & Order via WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919880781965?text=Namaste%20Master%20Abhinandhan,%20I%20have%20an%20inquiry%20regarding%20Yujamrutha" 
+     class="floating-whatsapp" 
+     target="_blank" 
+     rel="noopener" 
+     aria-label="Chat with Master Abhinandhan on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+  </a>
+
+  <!-- =========================================================================
+       FOOTER (Emerald Forest & Radiant Gold)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <h4>YUJAMRUTHA</h4>
+        <div class="footer-tagline">Where Nature Meets Wellness</div>
+        <p class="footer-desc" data-i18n="footer_about">
+          Yujamrutha unites traditional classical yoga under district champion Abhinandhan with pure, raw, multifloral farm honey from Kotikoppa, Thirthahalli.
+        </p>
+        <div style="display: flex; gap: 0.6rem; margin-top: 1rem;">
+          <button class="lang-toggle-btn" style="background: rgba(255,255,255,0.08); color: #FFF; border-color: rgba(229, 175, 54, 0.4);">
+            <span class="lang-toggle-label">ಕನ್ನಡ</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h5 class="footer-heading" data-i18n="footer_quick_links">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+          <li><a href="yoga.html" data-i18n="nav_yoga">Yoga Classes</a></li>
+          <li><a href="honey.html" data-i18n="nav_honey">Pure Farm Honey</a></li>
+          <li><a href="#beekeeping" data-i18n="nav_impact">Our Impact</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact & Location</a></li>
+        </ul>
+      </div>
+
+      <!-- Offerings -->
+      <div>
+        <h5 class="footer-heading" data-i18n="footer_offerings">Our Offerings</h5>
+        <ul class="footer-links">
+          <li><a href="yoga.html#hatha">Hatha & Surya Namaskar</a></li>
+          <li><a href="yoga.html#pranayama">Pranayama & Meditation</a></li>
+          <li><a href="yoga.html#competition">District Competition Coaching</a></li>
+          <li><a href="honey.html">250g Multifloral Jar</a></li>
+          <li><a href="honey.html">500g Multifloral Jar</a></li>
+          <li><a href="honey.html">1kg Family Pack</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h5 class="footer-heading" data-i18n="nav_contact">Contact</h5>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-i18n="contact_addr_val">Kotikoppa, Araga, Thirthahalli Taluk, Shivamogga, Karnataka - 577414</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:9880781965" style="color: #FFF;">9880781965</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <a href="https://wa.me/919880781965" target="_blank" rel="noopener" style="color: #FFF;">WhatsApp: 9880781965</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 YUJAMRUTHA. <span data-i18n="footer_rights">All rights reserved.</span></div>
+      <div>Where Nature Meets Wellness &bull; Abhinandhan &bull; Kotikoppa, Araga, Thirthahalli</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/honey-cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

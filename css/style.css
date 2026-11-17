@@ -1,0 +1,2298 @@
+/* ==========================================================================
+   YUJAMRUTHA - YOGA & PURE FARM HONEY
+   Where Nature Meets Wellness
+   Emerald Forest & Golden Amber Luxury Aesthetic
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Noto+Sans+Kannada:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Emerald Forest & Golden Honey Theme */
+  --bg-forest-deep: #07170E;
+  --bg-forest-dark: #0D2216;
+  --bg-forest-card: #122B1E;
+  --bg-primary: #FFFDF9;
+  --bg-secondary: #FBF6EB;
+  --bg-tertiary: #F6EDDA;
+  --bg-card: #FFFFFF;
+  --bg-gold-light: #FDF4E1;
+  --bg-gold-subtle: #FFF9EE;
+
+  /* Gold & Amber Palette */
+  --gold-primary: #D49B24;
+  --gold-glow: #F5C542;
+  --gold-amber: #E2A72B;
+  --gold-hover: #BE8617;
+  --gold-dark: #8C5C0B;
+  --gold-deep: #5A3903;
+  --gold-soft: #F4DC9E;
+  --gold-border: #E5AF36;
+  --gold-border-light: rgba(229, 175, 54, 0.35);
+
+  /* Forest Green Palette */
+  --forest-green: #1B432C;
+  --forest-moss: #2E6040;
+  --forest-accent: #3E7B54;
+  --forest-light: #EBF3ED;
+
+  /* Text & Neutrals */
+  --text-primary: #1C150D;
+  --text-secondary: #574435;
+  --text-muted: #846F5F;
+  --text-light: #FAF5EA;
+  --text-gold: #F4DC9E;
+  --white: #FFFFFF;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 10px rgba(7, 23, 14, 0.08);
+  --shadow-md: 0 8px 24px rgba(7, 23, 14, 0.12);
+  --shadow-lg: 0 16px 45px rgba(7, 23, 14, 0.18);
+  --shadow-gold: 0 6px 25px rgba(229, 175, 54, 0.3);
+  --shadow-gold-lg: 0 12px 35px rgba(229, 175, 54, 0.45);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', 'Noto Sans Kannada', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.65;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body.lang-kn, 
+.lang-kn {
+  font-family: 'Noto Sans Kannada', 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--text-primary);
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+body.lang-kn h1,
+body.lang-kn h2,
+body.lang-kn h3,
+body.lang-kn h4 {
+  font-family: 'Noto Sans Kannada', serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+img, svg {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Top Announcement Bar (Gold & Emerald)
+   -------------------------------------------------------------------------- */
+.top-bar {
+  background: linear-gradient(90deg, #091F13 0%, #112F1F 50%, #091F13 100%);
+  border-bottom: 1px solid rgba(229, 175, 54, 0.35);
+  padding: 0.45rem 1rem;
+  font-size: 0.84rem;
+  color: #EED79D;
+  font-weight: 500;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.top-bar-location {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.top-bar-location svg {
+  color: var(--gold-glow);
+}
+
+.top-bar-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.top-bar a {
+  color: #F8E5B8;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.top-bar a:hover {
+  color: #FFFFFF;
+  text-shadow: 0 0 8px rgba(245, 197, 66, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   Site Header (Matching Image Mockup: Translucent Dark Emerald & Gold)
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(8, 22, 14, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(229, 175, 54, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  transition: var(--transition);
+}
+
+.site-header.scrolled {
+  background: rgba(6, 17, 11, 0.98);
+  border-bottom: 1px solid rgba(229, 175, 54, 0.5);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0;
+}
+
+/* Logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-logo-img {
+  height: 52px;
+  width: auto;
+}
+
+/* Navigation Links */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Home pill button like in the image */
+.nav-pill-home {
+  background: rgba(22, 54, 34, 0.8);
+  border: 1px solid var(--gold-border);
+  color: #FCEFD2 !important;
+  font-weight: 600 !important;
+  padding: 0.38rem 1rem !important;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 0 12px rgba(229, 175, 54, 0.25);
+  transition: var(--transition);
+}
+
+.nav-pill-home:hover {
+  background: rgba(35, 78, 51, 0.95);
+  box-shadow: 0 0 18px rgba(229, 175, 54, 0.5);
+  color: #FFFFFF !important;
+  transform: translateY(-1px);
+}
+
+.nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #E2D3BE;
+  position: relative;
+  padding: 0.35rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #FCE9B6;
+  text-shadow: 0 0 10px rgba(245, 197, 66, 0.5);
+}
+
+/* Dropdown Menu for Yoga */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  min-width: 230px;
+  background: rgba(10, 26, 17, 0.97);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(229, 175, 54, 0.4);
+  border-radius: var(--radius-md);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  padding: 0.6rem 0;
+  margin-top: 0.6rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 100;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  color: #E2D3BE;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-dropdown-item:hover {
+  background: rgba(229, 175, 54, 0.15);
+  color: #FFDE8A;
+  padding-left: 1.5rem;
+}
+
+/* Header Action Buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.nav-divider {
+  width: 1px;
+  height: 22px;
+  background: rgba(229, 175, 54, 0.4);
+  margin: 0 0.2rem;
+}
+
+/* Language Toggle Button */
+.lang-toggle-btn {
+  background: rgba(22, 54, 34, 0.6);
+  border: 1px solid rgba(229, 175, 54, 0.45);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #F8E7C0;
+  transition: var(--transition);
+}
+
+.lang-toggle-btn:hover {
+  background: rgba(35, 78, 51, 0.9);
+  border-color: var(--gold-glow);
+  box-shadow: 0 0 12px rgba(229, 175, 54, 0.4);
+  color: #FFFFFF;
+}
+
+.lang-badge {
+  background: linear-gradient(135deg, #DEAA2E 0%, #B87B14 100%);
+  color: #FFFFFF;
+  padding: 0.12rem 0.4rem;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+/* Icon Buttons (WhatsApp & Cart) */
+.nav-icon-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(229, 175, 54, 0.45);
+  background: rgba(22, 54, 34, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FCEFD2;
+  transition: var(--transition);
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-icon-circle:hover {
+  background: rgba(35, 78, 51, 0.9);
+  border-color: var(--gold-glow);
+  color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(229, 175, 54, 0.45);
+  transform: translateY(-1px);
+}
+
+.nav-icon-circle.whatsapp:hover {
+  background: rgba(37, 211, 102, 0.3);
+  border-color: #25D366;
+  color: #25D366;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+}
+
+.cart-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: linear-gradient(135deg, #E5AC32 0%, #B87B14 100%);
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 700;
+  width: 17px;
+  height: 17px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Hamburger toggle */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 2.5px;
+  background-color: var(--gold-glow);
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* --------------------------------------------------------------------------
+   THE HERO SHOWCASE (Using the uploaded artwork)
+   -------------------------------------------------------------------------- */
+.hero-stage {
+  position: relative;
+  width: 100%;
+  background-color: #07170E;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Master aspect-ratio container for the clean hero artwork (1376x688) */
+.hero-artwork-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  aspect-ratio: 1376 / 688;
+  background-image: url('../assets/images/hero-clean.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Subtle gradient blend at bottom edge of hero */
+.hero-artwork-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  background: linear-gradient(to top, rgba(7, 23, 14, 0.3) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* 
+   Interactive Hotspots matching the exact buttons & icons on the image
+*/
+.hero-hotspot {
+  position: absolute;
+  cursor: pointer;
+  z-index: 20;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  text-indent: -9999px; /* Accessibility hidden text */
+}
+
+/* Left Loop Hotspot (Yogi on Hill) */
+.hotspot-yogi-loop {
+  top: 10.0%;
+  left: 10.0%;
+  width: 22.0%;
+  height: 38.0%;
+  border-radius: 50%;
+}
+
+.hotspot-yogi-loop:hover {
+  background: radial-gradient(circle, rgba(245, 197, 66, 0.25) 0%, transparent 70%);
+  box-shadow: 0 0 25px rgba(245, 197, 66, 0.35);
+}
+
+/* Right Loop Hotspot (Honey Jar) */
+.hotspot-honey-loop {
+  top: 22.0%;
+  left: 77.0%;
+  width: 21.0%;
+  height: 40.0%;
+  border-radius: 50%;
+}
+
+.hotspot-honey-loop:hover {
+  background: radial-gradient(circle, rgba(226, 167, 43, 0.25) 0%, transparent 70%);
+  box-shadow: 0 0 25px rgba(226, 167, 43, 0.35);
+}
+
+/* Center CTA 1: Yoga Registration */
+.hotspot-btn-yoga {
+  top: 57.0%;
+  left: 9.8%;
+  width: 27.5%;
+  height: 11.5%;
+}
+
+.hotspot-btn-yoga:hover {
+  box-shadow: 0 0 25px rgba(245, 197, 66, 0.75), inset 0 0 10px rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Center CTA 2: Buy Honey */
+.hotspot-btn-honey {
+  top: 56.0%;
+  left: 61.5%;
+  width: 28.5%;
+  height: 12.0%;
+}
+
+.hotspot-btn-honey:hover {
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.8), inset 0 0 10px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Bottom Feature Icon Hotspots */
+.hotspot-feat-1 {
+  bottom: 4%;
+  left: 18.0%;
+  width: 12.0%;
+  height: 18.0%;
+  border-radius: var(--radius-sm);
+}
+
+.hotspot-feat-2 {
+  bottom: 4%;
+  left: 33.0%;
+  width: 12.0%;
+  height: 18.0%;
+  border-radius: var(--radius-sm);
+}
+
+.hotspot-feat-3 {
+  bottom: 4%;
+  left: 54.0%;
+  width: 12.0%;
+  height: 18.0%;
+  border-radius: var(--radius-sm);
+}
+
+.hotspot-feat-4 {
+  bottom: 4%;
+  left: 69.0%;
+  width: 12.0%;
+  height: 18.0%;
+  border-radius: var(--radius-sm);
+}
+
+.hotspot-feat-1:hover,
+.hotspot-feat-2:hover,
+.hotspot-feat-3:hover,
+.hotspot-feat-4:hover {
+  background: rgba(229, 175, 54, 0.15);
+  box-shadow: 0 0 15px rgba(229, 175, 54, 0.4);
+  border: 1px solid rgba(229, 175, 54, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Kannada Mode Floating Layer */
+.hero-kn-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background: rgba(8, 24, 15, 0.88);
+  backdrop-filter: blur(12px);
+  border: 2px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-gold-lg);
+  z-index: 30;
+}
+
+body.lang-kn .hero-kn-overlay {
+  display: block;
+}
+
+.hero-kn-title {
+  font-family: 'Noto Sans Kannada', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--gold-glow);
+  margin-bottom: 0.3rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-kn-sub {
+  font-size: 1.05rem;
+  color: #F8E7C0;
+  margin-bottom: 0.6rem;
+}
+
+.hero-kn-trio {
+  font-size: 0.85rem;
+  color: #D3B882;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-kn-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Mobile Quick Actions Dock (shown below hero on mobile) */
+.hero-mobile-dock {
+  display: none;
+  background: #091F13;
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid rgba(229, 175, 54, 0.3);
+}
+
+.hero-mobile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   Section: 4 Core Features Bar
+   -------------------------------------------------------------------------- */
+.features-bar {
+  background: #0B2215;
+  border-top: 1px solid rgba(229, 175, 54, 0.25);
+  border-bottom: 1px solid rgba(229, 175, 54, 0.25);
+  padding: 2.2rem 0;
+  color: #FCEFD2;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-box {
+  background: rgba(18, 43, 29, 0.7);
+  border: 1px solid rgba(229, 175, 54, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  transition: var(--transition);
+  color: inherit;
+}
+
+.feature-box:hover {
+  background: rgba(28, 62, 42, 0.9);
+  border-color: var(--gold-glow);
+  box-shadow: 0 0 20px rgba(229, 175, 54, 0.3);
+  transform: translateY(-3px);
+  color: #FFFFFF;
+}
+
+.feature-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: rgba(229, 175, 54, 0.15);
+  border: 1.5px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-glow);
+  flex-shrink: 0;
+}
+
+.feature-title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.2rem;
+  color: #FFF2D1;
+}
+
+.feature-desc {
+  font-size: 0.76rem;
+  color: #C0B09E;
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   General Content Sections (Ivory, Gold & Green)
+   -------------------------------------------------------------------------- */
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+
+.section-tag {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.2px;
+  color: var(--gold-dark);
+  background: var(--bg-gold-light);
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--gold-border-light);
+}
+
+.section-title {
+  font-size: 2.35rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-primary);
+}
+
+.section-subtitle {
+  font-size: 1.02rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #DEAA2E 0%, #C38612 100%);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #E6B53B 0%, #B27608 100%);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold-lg);
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  border-color: var(--gold-border);
+  color: var(--gold-deep);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-gold-light);
+  border-color: var(--gold-primary);
+  color: var(--gold-dark);
+}
+
+.btn-forest {
+  background: rgba(22, 54, 34, 0.9);
+  border: 1px solid var(--gold-border);
+  color: #FCEFD2;
+}
+
+.btn-forest:hover {
+  background: rgba(35, 78, 51, 1);
+  color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(229, 175, 54, 0.4);
+}
+
+.btn-whatsapp {
+  background: #25D366;
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp:hover {
+  background: #20BA5A;
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.35);
+}
+
+/* --------------------------------------------------------------------------
+   About & Spotlight Section
+   -------------------------------------------------------------------------- */
+.spotlight-section {
+  padding: 5rem 0;
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.instructor-portrait-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.instructor-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--gold-border-light);
+}
+
+.spotlight-role {
+  color: var(--gold-dark);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spotlight-bio {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.7;
+}
+
+.achievements-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.achievement-item {
+  background: var(--bg-secondary);
+  border: 1px solid var(--gold-border-light);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.achievement-icon {
+  color: var(--gold-primary);
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.achievement-text {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Yoga Batches Section
+   -------------------------------------------------------------------------- */
+.yoga-section {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, transparent 0%, var(--bg-secondary) 100%);
+}
+
+.yoga-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.yoga-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.6rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.yoga-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gold-primary);
+}
+
+.yoga-card.featured {
+  border: 2px solid var(--gold-primary);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFBF3 100%);
+}
+
+.featured-pill {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: var(--gold-primary);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.yoga-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--bg-gold-light);
+  color: var(--gold-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.yoga-card-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.yoga-card-level {
+  font-size: 0.78rem;
+  color: var(--gold-dark);
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.yoga-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.yoga-features-list {
+  margin-bottom: 1.5rem;
+  border-top: 1px solid var(--gold-border-light);
+  padding-top: 1rem;
+}
+
+.yoga-features-list li {
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.yoga-features-list svg {
+  color: var(--gold-primary);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Honey Section & Products
+   -------------------------------------------------------------------------- */
+.honey-section {
+  padding: 5rem 0;
+}
+
+.honey-origin-card {
+  background: linear-gradient(135deg, #FFFDF8 0%, #FDF4DF 100%);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-bottom: 4rem;
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.honey-origin-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.honey-origin-text p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.65;
+}
+
+.honey-perks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.honey-perk-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold-deep);
+}
+
+.honey-perk-item svg {
+  color: var(--gold-primary);
+  width: 16px;
+  height: 16px;
+}
+
+.honey-origin-visual {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gold-border);
+  box-shadow: var(--shadow-sm);
+  height: 280px;
+}
+
+.honey-origin-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Product Cards */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.product-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.product-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--bg-gold-light);
+  border: 1px solid var(--gold-border);
+  color: var(--gold-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.product-img-wrap {
+  height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  padding: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #FFFDF9;
+  border: 1px solid var(--gold-border-light);
+  box-shadow: inset 0 0 15px rgba(229, 175, 54, 0.08);
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.06);
+}
+
+.product-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.product-subtitle {
+  font-size: 0.8rem;
+  color: var(--gold-dark);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.product-desc {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.product-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.25rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--gold-border-light);
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--gold-dark);
+}
+
+.product-size {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.product-actions {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.6rem;
+}
+
+.qty-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-full);
+  background: var(--bg-gold-light);
+  overflow: hidden;
+}
+
+.qty-btn {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 36px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold-deep);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.qty-btn:hover {
+  background: var(--gold-soft);
+}
+
+.qty-value {
+  width: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Contact & Location Section
+   -------------------------------------------------------------------------- */
+.contact-section {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 3.5rem;
+}
+
+.contact-info-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.contact-info-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.contact-detail-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-detail-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-gold-light);
+  border: 1px solid var(--gold-border);
+  color: var(--gold-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.contact-value {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-value a:hover {
+  color: var(--gold-primary);
+}
+
+.map-wrapper {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gold-border);
+  box-shadow: var(--shadow-sm);
+  margin-top: 1.5rem;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+}
+
+.contact-form-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.92rem;
+  background: var(--bg-gold-subtle);
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--gold-primary);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(212, 155, 36, 0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* --------------------------------------------------------------------------
+   Cart Drawer Component
+   -------------------------------------------------------------------------- */
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 23, 14, 0.65);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-card);
+  z-index: 2001;
+  box-shadow: -5px 0 35px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.cart-drawer.active {
+  transform: translateX(0);
+}
+
+.cart-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--gold-border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-gold-light);
+}
+
+.cart-header h3 {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gold-deep);
+}
+
+.cart-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0.2rem;
+  line-height: 1;
+}
+
+.cart-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+
+.cart-empty-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  color: var(--gold-soft);
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 50px 1fr auto;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gold-border-light);
+}
+
+.cart-item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background: var(--bg-gold-light);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+}
+
+.cart-item-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.cart-item-price {
+  font-size: 0.82rem;
+  color: var(--gold-dark);
+  font-weight: 600;
+}
+
+.cart-item-remove {
+  background: none;
+  border: none;
+  color: #B23B3B;
+  cursor: pointer;
+  font-size: 0.75rem;
+  text-decoration: underline;
+}
+
+.cart-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--gold-border);
+  background: var(--bg-gold-subtle);
+}
+
+.cart-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   Toast Notifications
+   -------------------------------------------------------------------------- */
+.toast-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  pointer-events: none;
+}
+
+.toast {
+  background: #0D2216;
+  color: var(--white);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--gold-glow);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.3s ease;
+  pointer-events: auto;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --------------------------------------------------------------------------
+   Floating WhatsApp Button
+   -------------------------------------------------------------------------- */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 999;
+  background: #25D366;
+  color: var(--white);
+  width: 58px;
+  height: 58px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  transition: var(--transition);
+}
+
+.floating-whatsapp:hover {
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+  color: var(--white);
+}
+
+.floating-whatsapp svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* --------------------------------------------------------------------------
+   Footer (Emerald & Gold)
+   -------------------------------------------------------------------------- */
+.site-footer {
+  background: #08170E;
+  color: #E2D3C4;
+  padding: 4.5rem 0 1.5rem;
+  border-top: 3px solid var(--gold-border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr 0.9fr 1.2fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand h4 {
+  color: #FFFDF8;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.footer-tagline {
+  color: var(--gold-glow);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.footer-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #C0B09E;
+  margin-bottom: 1.25rem;
+}
+
+.footer-heading {
+  color: #FFFDF8;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background: var(--gold-glow);
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: #C0B09E;
+  font-size: 0.88rem;
+}
+
+.footer-links a:hover {
+  color: var(--gold-glow);
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  margin-bottom: 0.9rem;
+  color: #C0B09E;
+}
+
+.footer-contact-item svg {
+  color: var(--gold-glow);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #8C7B6C;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Media Queries
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  .spotlight-grid,
+  .contact-grid,
+  .honey-origin-card {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .yoga-cards-grid,
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #0B2014;
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+    transition: right 0.35s ease;
+    align-items: flex-start;
+    gap: 1.5rem;
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-mobile-dock {
+    display: block;
+  }
+
+  .hero-kn-overlay {
+    width: 90%;
+    padding: 1.25rem;
+  }
+
+  .hero-kn-title {
+    font-size: 1.6rem;
+  }
+
+  .yoga-cards-grid,
+  .products-grid,
+  .features-grid,
+  .achievements-list,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   SERVICES HUB - TAB SECTIONS (YOGA REGISTRATION & BUY HONEY)
+   ========================================================================== */
+.services-hub-section {
+  padding: 4rem 0 5rem;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.hub-tabs-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.75rem;
+}
+
+.hub-tabs-nav {
+  display: inline-flex;
+  background: #FFFDF9;
+  border: 2px solid var(--gold-border);
+  border-radius: var(--radius-full);
+  padding: 0.4rem;
+  box-shadow: 0 10px 30px rgba(229, 175, 54, 0.18);
+  gap: 0.5rem;
+  max-width: 100%;
+}
+
+.hub-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.hub-tab-btn:hover {
+  color: var(--gold-dark);
+  background: rgba(229, 175, 54, 0.1);
+  transform: translateY(-1px);
+}
+
+.hub-tab-btn.active {
+  background: linear-gradient(135deg, #0A2616 0%, #06150C 100%);
+  color: #FFF2D1;
+  box-shadow: 0 6px 20px rgba(7, 23, 14, 0.35), inset 0 1px 0 rgba(245, 197, 66, 0.4);
+  border: 1px solid rgba(245, 197, 66, 0.45);
+}
+
+.hub-tab-btn .tab-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.hub-tab-btn .tab-title {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.hub-tab-btn .tab-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  background: rgba(229, 175, 54, 0.18);
+  color: #8E5E0B;
+}
+
+.hub-tab-btn.active .tab-badge {
+  background: rgba(245, 197, 66, 0.25);
+  color: #FCEBD0;
+  border: 1px solid rgba(245, 197, 66, 0.35);
+}
+
+/* Tab Panes */
+.hub-tab-pane {
+  display: none;
+}
+
+.hub-tab-pane.active {
+  display: block;
+  animation: fadeInHubPane 0.35s ease-out forwards;
+}
+
+@keyframes fadeInHubPane {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Yoga Registration Form Box */
+.yoga-reg-box {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-top: 3.5rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.yoga-reg-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold-light), var(--gold-primary), var(--gold-dark));
+}
+
+.yoga-reg-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 2rem;
+}
+
+.yoga-reg-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.yoga-reg-field label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.45rem;
+}
+
+.yoga-reg-field label .field-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bg-gold-light);
+  color: var(--gold-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  border: 1px solid var(--gold-border);
+  flex-shrink: 0;
+}
+
+.yoga-reg-field input,
+.yoga-reg-field select,
+.yoga-reg-field textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  background: #FFFDF9;
+  color: var(--text-primary);
+  transition: var(--transition);
+  box-sizing: border-box;
+}
+
+.yoga-reg-field textarea {
+  resize: vertical;
+  min-height: 72px;
+  line-height: 1.5;
+}
+
+.yoga-reg-field input:focus,
+.yoga-reg-field select:focus,
+.yoga-reg-field textarea:focus {
+  outline: none;
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px rgba(229, 175, 54, 0.2);
+  background: #FFFFFF;
+}
+
+.yoga-reg-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.reg-same-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-left: auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+.reg-same-checkbox input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  accent-color: var(--gold-dark);
+}
+
+/* Registration Confirmation Modal */
+.reg-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 23, 14, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.reg-modal-backdrop.active {
+  display: flex;
+}
+
+.reg-modal-card {
+  background: #FFFDF9;
+  border: 1.5px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  max-width: 640px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  position: relative;
+  padding: 2.2rem;
+  animation: modalSlideUp 0.35s ease;
+}
+
+@keyframes modalSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reg-modal-header {
+  text-align: center;
+  border-bottom: 1px dashed var(--gold-border);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.reg-modal-badge {
+  display: inline-block;
+  background: var(--bg-gold-light);
+  color: var(--gold-deep);
+  border: 1px solid var(--gold-border);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.reg-modal-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.reg-modal-sub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.reg-receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin-bottom: 1.5rem;
+}
+
+.reg-receipt-table tr {
+  border-bottom: 1px solid var(--gold-border-light);
+}
+
+.reg-receipt-table td {
+  padding: 0.65rem 0.5rem;
+}
+
+.reg-receipt-label {
+  font-weight: 700;
+  color: var(--gold-dark);
+  width: 40%;
+}
+
+.reg-receipt-val {
+  color: var(--text-primary);
+}
+
+.reg-modal-actions {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top: 1px dashed var(--gold-border);
+  padding-top: 1.25rem;
+}
+
+.reg-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.reg-modal-close:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .hub-tabs-nav {
+    flex-direction: column;
+    width: 100%;
+    border-radius: var(--radius-lg);
+  }
+  .hub-tab-btn {
+    width: 100%;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    padding: 0.75rem 1rem;
+  }
+  .yoga-reg-grid {
+    grid-template-columns: 1fr;
+  }
+  .yoga-reg-box {
+    padding: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   YOGA INSTRUCTOR SPOTLIGHT (HERO SHOWCASE WITH CHAMPIONSHIP PHOTO)
+   ========================================================================== */
+.instructor-spotlight-section {
+  padding: 4.5rem 0 3.5rem;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--gold-border-light);
+}
+
+.instructor-feature-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1.5px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructor-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.instructor-img-frame {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  background: #0D2518;
+  border: 1px solid var(--gold-border-light);
+}
+
+.instructor-championship-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.instructor-feature-card:hover .instructor-championship-img {
+  transform: scale(1.02);
+}
+
+.championship-badge-overlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  background: rgba(13, 37, 24, 0.90);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(226, 179, 63, 0.65);
+  color: #F8F5E9;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+.championship-badge-overlay .badge-icon {
+  font-size: 1.1rem;
+  color: #F5B041;
+  flex-shrink: 0;
+}
+
+.instructor-caption-box {
+  margin-top: 1.15rem;
+  padding: 1rem 1.15rem;
+  background: var(--bg-gold-light);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gold-border);
+  text-align: left;
+}
+
+.instructor-caption-title {
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--gold-dark);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-display);
+}
+
+.instructor-caption-sub {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+@media (max-width: 576px) {
+  .championship-badge-overlay {
+    position: static;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    font-size: 0.78rem;
+  }
+}
+
+/* ==========================================================================
+   HONEY SUBSECTIONS QUICK NAVIGATION BAR & SUB-CARDS
+   ========================================================================== */
+.honey-subnav-bar {
+  background: #FFFDF8;
+  border-bottom: 1px solid var(--gold-border-light);
+  padding: 0.85rem 0;
+  position: sticky;
+  top: 72px;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.honey-subnav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.2rem 1rem;
+}
+
+.honey-subnav-container::-webkit-scrollbar {
+  display: none;
+}
+
+.honey-subnav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border: 1px solid var(--gold-border-light);
+  background: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.honey-subnav-link:hover,
+.honey-subnav-link.active {
+  color: var(--gold-deep);
+  border-color: var(--gold-primary);
+  background: var(--bg-gold-light);
+  box-shadow: 0 2px 8px rgba(229, 175, 54, 0.2);
+}
+
+.honey-ritual-card {
+  background: linear-gradient(135deg, #FFFDF8 0%, #FDF4E1 100%);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  box-shadow: var(--shadow-md);
+}
+
+.honey-ritual-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.honey-ritual-item {
+  background: #FFFFFF;
+  border: 1px solid var(--gold-border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.honey-ritual-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold-primary);
+}
+
+.honey-ritual-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.honey-ritual-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--gold-dark);
+  margin-bottom: 0.4rem;
+}
+
+.honey-ritual-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .honey-ritual-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .honey-subnav-container {
+    justify-content: flex-start;
+  }
+  .honey-ritual-grid {
+    grid-template-columns: 1fr;
+  }
+  .honey-ritual-card {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+

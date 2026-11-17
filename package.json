@@ -1,0 +1,25 @@
+{
+  "name": "yujamrutha-yoga-honey",
+  "version": "1.0.0",
+  "description": "Website for Yujamrutha - Yoga Classes & Pure Multifloral Farm Honey by Abhinandhan in Thirthahalli",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "live": "live-server --port=3000 --entry-file=index.html"
+  },
+  "keywords": [
+    "yoga",
+    "honey",
+    "thirthahalli",
+    "malnad",
+    "yujamrutha",
+    "bilingual",
+    "kannada"
+  ],
+  "author": "Abhinandhan",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
