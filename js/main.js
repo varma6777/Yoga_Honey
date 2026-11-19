@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavigation();
   initContactForm();
   initScrollEffects();
+  initUrlParamsHandler();
 });
 
 /**
@@ -240,15 +241,15 @@ function syncPhoneToWhatsApp(checkbox) {
  * Quick Yoga Class Booking Trigger
  */
 function quickBookClass(batchName) {
-  const form = document.getElementById('yogaRegistrationForm') || document.getElementById('yogaQuickForm');
-  const batchSelect = form ? form.querySelector('[name="yoga_class"]') : (document.getElementById('regClass') || document.getElementById('homeRegClass'));
+  // If we are already on yoga-registration.html
+  const regClass = document.getElementById('regClass');
   const regBox = document.getElementById('yogaRegBox');
 
-  if (batchSelect && regBox) {
-    for (let i = 0; i < batchSelect.options.length; i++) {
-      if (batchSelect.options[i].text.toLowerCase().includes(batchName.toLowerCase()) ||
-          batchSelect.options[i].value.toLowerCase().includes(batchName.toLowerCase())) {
-        batchSelect.selectedIndex = i;
+  if (window.location.pathname.includes('yoga-registration.html') && regClass && regBox) {
+    for (let i = 0; i < regClass.options.length; i++) {
+      if (regClass.options[i].text.toLowerCase().includes(batchName.toLowerCase()) ||
+          regClass.options[i].value.toLowerCase().includes(batchName.toLowerCase())) {
+        regClass.selectedIndex = i;
         break;
       }
     }
@@ -257,14 +258,38 @@ function quickBookClass(batchName) {
     return;
   }
 
-  // Fallback to direct WhatsApp message
-  const isKn = currentLang === 'kn';
-  const text = isKn
-    ? `ನಮಸ್ಕಾರ ಗುರು ಅಭಿನಂದನ್ ಅವರೇ, ನಾನು ಯುಜಾಮೃತ ${batchName} ಯೋಗ ತರಗತಿಗೆ ನೋಂದಾಯಿಸಲು ಇಚ್ಛಿಸುತ್ತೇನೆ. ಹೆಚ್ಚಿನ ವಿವರ ದಯವಿಟ್ಟು ತಿಳಿಸಿ.`
-    : `Namaste Master Abhinandhan, I would like to enroll/inquire for Yujamrutha ${batchName} yoga batch. Please share details.`;
-  
-  const waUrl = `https://wa.me/919880781965?text=${encodeURIComponent(text)}`;
-  window.open(waUrl, '_blank');
+  // If on another page, route directly to the dedicated Yoga Registration page with pre-selected batch
+  window.location.href = `yoga-registration.html?batch=${encodeURIComponent(batchName)}`;
+}
+
+/**
+ * Reads URL search parameters on page load (e.g. ?batch=...) to pre-select options
+ */
+function initUrlParamsHandler() {
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const batchParam = urlParams.get('batch');
+    if (batchParam) {
+      const regClass = document.getElementById('regClass') || document.getElementById('homeRegClass');
+      const regBox = document.getElementById('yogaRegBox');
+      if (regClass) {
+        for (let i = 0; i < regClass.options.length; i++) {
+          if (regClass.options[i].text.toLowerCase().includes(batchParam.toLowerCase()) ||
+              regClass.options[i].value.toLowerCase().includes(batchParam.toLowerCase())) {
+            regClass.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      if (regBox) {
+        setTimeout(() => {
+          regBox.scrollIntoView({ behavior: 'smooth' });
+        }, 350);
+      }
+    }
+  } catch (err) {
+    console.warn('URL params parser error:', err);
+  }
 }
 
 /**

@@ -55,8 +55,9 @@
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </a>
           <div class="nav-dropdown-menu">
+            <a href="yoga-registration.html" class="nav-dropdown-item" style="font-weight: 700; color: var(--gold-dark);" data-i18n="nav_yoga_registration">🪷 Yoga Registration Page</a>
+            <a href="yoga.html" class="nav-dropdown-item" data-i18n="nav_yoga_classes">Yoga Classes & Batches</a>
             <a href="yoga.html#instructor" class="nav-dropdown-item">Meet Guru Abhinandhan</a>
-            <a href="#yoga" class="nav-dropdown-item" onclick="switchHubTab('yoga', true);">Yoga Registration & Batches</a>
             <a href="yoga.html#schedule" class="nav-dropdown-item">Weekly Timetable</a>
             <a href="yoga.html#hatha" class="nav-dropdown-item">Hatha & Surya Namaskar</a>
             <a href="yoga.html#pranayama" class="nav-dropdown-item">Pranayama & Meditation</a>
@@ -71,7 +72,8 @@
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
           </a>
           <div class="nav-dropdown-menu">
-            <a href="#honey" class="nav-dropdown-item" onclick="switchHubTab('honey', true);" data-i18n="nav_honey_jars">Honey Packages (250g, 500g, 1kg)</a>
+            <a href="buy-honey.html" class="nav-dropdown-item" style="font-weight: 700; color: var(--gold-dark);" data-i18n="nav_buy_honey">🍯 Buy Farm Honey (Online Shop)</a>
+            <a href="honey.html" class="nav-dropdown-item" data-i18n="nav_honey_story">Multifloral Honey Story</a>
             <a href="honey.html#multifloral" class="nav-dropdown-item" data-i18n="nav_honey_why">Why Multifloral Honey?</a>
             <a href="honey.html#apiary" class="nav-dropdown-item" data-i18n="nav_honey_apiary">Kotikoppa Apiary & Harvest</a>
             <a href="honey.html#purity" class="nav-dropdown-item" data-i18n="nav_honey_purity">Raw Purity & Quality Tests</a>
@@ -108,6 +110,8 @@
           <span class="cart-count" style="display: none;">0</span>
         </button>
 
+        <a href="yoga-registration.html" class="btn btn-primary btn-sm" data-i18n="nav_yoga_registration">Yoga Registration</a>
+
         <!-- Hamburger Icon for Mobile -->
         <button class="hamburger" aria-label="Open Navigation Menu">
           <span class="hamburger-line"></span>
@@ -138,25 +142,25 @@
       </a>
 
       <!-- Honey Jar Loop Hotspot (Right) -->
-      <a href="honey.html" class="hero-hotspot hotspot-honey-loop" title="Discover Pure Farm Multifloral Honey">
+      <a href="buy-honey.html" class="hero-hotspot hotspot-honey-loop" title="Discover Pure Farm Multifloral Honey">
         Pure Farm Honey
       </a>
 
-      <!-- Button 1 Hotspot: Yoga Registration -->
-      <a href="#yoga" class="hero-hotspot hotspot-btn-yoga" onclick="switchHubTab('yoga', true); return false;" title="Yoga Registration">
+      <!-- Button 1 Hotspot: Yoga Registration (Direct Dedicated Page) -->
+      <a href="yoga-registration.html" class="hero-hotspot hotspot-btn-yoga" title="Yoga Registration">
         Yoga Registration
       </a>
 
-      <!-- Button 2 Hotspot: Buy Honey -->
-      <a href="#honey" class="hero-hotspot hotspot-btn-honey" onclick="switchHubTab('honey', true); return false;" title="Buy Honey">
+      <!-- Button 2 Hotspot: Buy Honey (Direct Dedicated Page) -->
+      <a href="buy-honey.html" class="hero-hotspot hotspot-btn-honey" title="Buy Honey">
         Buy Honey
       </a>
 
       <!-- 4 Bottom Feature Hotspots -->
-      <a href="#yoga" class="hero-hotspot hotspot-feat-1" title="Yoga for Better Life">
+      <a href="yoga-registration.html" class="hero-hotspot hotspot-feat-1" title="Yoga for Better Life">
         Yoga for Better Life
       </a>
-      <a href="#honey" class="hero-hotspot hotspot-feat-2" title="100% Natural Honey">
+      <a href="buy-honey.html" class="hero-hotspot hotspot-feat-2" title="100% Natural Honey">
         100% Natural Honey
       </a>
       <a href="#about" class="hero-hotspot hotspot-feat-3" title="Holistic Wellness">
@@ -172,13 +176,13 @@
         <div class="hero-kn-sub" data-i18n="hero_tagline_custom">ಪ್ರಕೃತಿ ಮತ್ತು ಸ್ವಾಸ್ಥ್ಯದ ದಿವ್ಯ ಸಂಗಮ</div>
         <div class="hero-kn-trio" data-i18n="hero_trio">ಯೋಗ • ಶುದ್ಧ ಜೇನುತುಪ್ಪ • ಆರೋಗ್ಯಕರ ಜೀವನ</div>
         <div class="hero-kn-actions">
-          <a href="#yoga" class="btn btn-primary">
+          <a href="yoga-registration.html" class="btn btn-primary">
             <span>🪷</span>
-            <span data-i18n="hero_btn_explore_yoga">ಯೋಗ ವಿವರ ತಿಳಿಯಿರಿ</span>
+            <span data-i18n="nav_yoga_registration">ಯೋಗ ನೋಂದಣಿ</span>
           </a>
-          <a href="#honey" class="btn btn-forest">
+          <a href="buy-honey.html" class="btn btn-forest">
             <span>🍯</span>
-            <span data-i18n="hero_btn_discover_honey">ಶುದ್ಧ ಜೇನು ಖರೀದಿಸಿ</span>
+            <span data-i18n="nav_buy_honey">ಶುದ್ಧ ಜೇನು ಖರೀದಿಸಿ</span>
           </a>
         </div>
       </div>
@@ -187,10 +191,10 @@
     <!-- Mobile Quick Actions Dock (shown for easy tap interaction on phones) -->
     <div class="hero-mobile-dock">
       <div class="container hero-mobile-grid">
-        <a href="#yoga" class="btn btn-primary" onclick="switchHubTab('yoga', true); return false;" style="font-size: 0.82rem; padding: 0.6rem 0.8rem;">
+        <a href="yoga-registration.html" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.65rem 0.85rem;">
           <span>🪷 Yoga Registration</span>
         </a>
-        <a href="#honey" class="btn btn-forest" onclick="switchHubTab('honey', true); return false;" style="font-size: 0.82rem; padding: 0.6rem 0.8rem;">
+        <a href="buy-honey.html" class="btn btn-forest" style="font-size: 0.85rem; padding: 0.65rem 0.85rem;">
           <span>🍯 Buy Honey</span>
         </a>
       </div>
@@ -291,6 +295,14 @@
       <div class="hub-tab-pane active" id="paneYoga">
         <!-- Anchor for #yoga -->
         <div id="yoga" style="position: relative; top: -90px; visibility: hidden;"></div>
+
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <a href="yoga-registration.html" class="btn btn-primary" style="box-shadow: 0 4px 15px rgba(229,175,54,0.3);">
+            <span>🪷</span>
+            <span>Open Dedicated Yoga Registration Page & Form</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
 
         <div class="section-header">
           <div class="section-tag" data-i18n="yoga_tag">Transform Your Life</div>
@@ -554,6 +566,14 @@
       <div class="hub-tab-pane" id="paneHoney">
         <!-- Anchor for #honey -->
         <div id="honey" style="position: relative; top: -90px; visibility: hidden;"></div>
+
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <a href="buy-honey.html" class="btn btn-primary" style="box-shadow: 0 4px 15px rgba(229,175,54,0.3);">
+            <span>🍯</span>
+            <span>Open Dedicated Buy Honey Store & Home Delivery</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
 
         <div class="section-header">
           <div class="section-tag" data-i18n="honey_tag">Nature's Liquid Gold</div>
@@ -908,8 +928,10 @@
         <ul class="footer-links">
           <li><a href="index.html" data-i18n="nav_home">Home</a></li>
           <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
-          <li><a href="yoga.html" data-i18n="nav_yoga">Yoga Classes</a></li>
-          <li><a href="honey.html" data-i18n="nav_honey">Pure Farm Honey</a></li>
+          <li><a href="yoga-registration.html" style="font-weight: 600; color: var(--gold-light);" data-i18n="nav_yoga_registration">Yoga Registration</a></li>
+          <li><a href="yoga.html" data-i18n="nav_yoga_classes">Yoga Classes</a></li>
+          <li><a href="buy-honey.html" style="font-weight: 600; color: var(--gold-light);" data-i18n="nav_buy_honey">Buy Farm Honey</a></li>
+          <li><a href="honey.html" data-i18n="nav_honey_story">Pure Farm Honey</a></li>
           <li><a href="#beekeeping" data-i18n="nav_impact">Our Impact</a></li>
           <li><a href="contact.html" data-i18n="nav_contact">Contact & Location</a></li>
         </ul>
@@ -919,12 +941,12 @@
       <div>
         <h5 class="footer-heading" data-i18n="footer_offerings">Our Offerings</h5>
         <ul class="footer-links">
-          <li><a href="yoga.html#hatha">Hatha & Surya Namaskar</a></li>
-          <li><a href="yoga.html#pranayama">Pranayama & Meditation</a></li>
-          <li><a href="yoga.html#competition">District Competition Coaching</a></li>
-          <li><a href="honey.html">250g Multifloral Jar</a></li>
-          <li><a href="honey.html">500g Multifloral Jar</a></li>
-          <li><a href="honey.html">1kg Family Pack</a></li>
+          <li><a href="buy-honey.html">250g Multifloral Jar (₹190)</a></li>
+          <li><a href="buy-honey.html">500g Glass Jar (₹360)</a></li>
+          <li><a href="buy-honey.html">1kg Value Pack (₹680)</a></li>
+          <li><a href="yoga-registration.html">Hatha & Surya Namaskar</a></li>
+          <li><a href="yoga-registration.html">Pranayama & Meditation</a></li>
+          <li><a href="yoga-registration.html">District Competition Coaching</a></li>
         </ul>
       </div>
 
